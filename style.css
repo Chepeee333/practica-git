@@ -1,0 +1,97 @@
+/* Estilos base del Sistema de Inscripción Escolar
+   TODO (rama feature-estilo): ajustar la paleta de colores de este archivo
+   (variables :root abajo) sin romper el resto del diseño. */
+
+:root {
+  --color-primario: #2c3e50;
+  --color-secundario: #ecf0f1;
+  --color-acento: #2980b9;
+  --color-texto: #2c3e50;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--color-texto);
+  background-color: var(--color-secundario);
+}
+
+header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header .tagline {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+nav {
+  background-color: var(--color-acento);
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: white;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 1rem;
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
