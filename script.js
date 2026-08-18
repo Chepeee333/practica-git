@@ -14,5 +14,17 @@ document.getElementById("form-contacto").addEventListener("submit", function (e)
   // por ejemplo: que ningún campo esté vacío, y que el correo tenga un
   // formato razonable (contenga "@" y ".").
 
+    if (!nombre || !correo || !mensaje) {
+    alert("Error: todos los campos son obligatorios.");
+    return;
+  }
+
+  if (!correo.includes("@") || !correo.includes(".")) {
+    alert("Error: ingresa un correo electrónico válido.");
+    return;
+  }
+
+  alert("Formulario recibido correctamente.");
+
   alert("Formulario recibido (validación pendiente de implementar).");
 });
