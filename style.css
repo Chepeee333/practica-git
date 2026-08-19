@@ -3,10 +3,10 @@
    (variables :root abajo) sin romper el resto del diseño. */
 
 :root {
-  --color-primario: #2c3e50;
-  --color-secundario: #ecf0f1;
-  --color-acento: #2980b9;
-  --color-texto: #2c3e50;
+  --color-primario: #1b4332;
+  --color-secundario: #f4f7f5;
+  --color-acento: #2d6a4f;
+  --color-texto: #112a1f;
 }
 
 * {
